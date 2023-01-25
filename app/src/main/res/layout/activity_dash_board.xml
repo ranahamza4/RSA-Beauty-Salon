@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".DashBoard">
+
+
+    <TextView
+        android:id="@+id/profileName"
+        android:layout_width="336dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="4dp"
+        android:drawableLeft="@drawable/ic_profile"
+        android:drawablePadding="5dp"
+        android:text="Name"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.413"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ViewFlipper
+        android:id="@+id/viewFlipper"
+        android:layout_width="323dp"
+        android:layout_height="170dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginRight="10dp"
+        android:autoStart="true"
+        android:flipInterval="3000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/slider1" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:background="@drawable/slider2" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:background="@drawable/slider3" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:background="@drawable/slider4" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:background="@drawable/slider5" />
+
+    </ViewFlipper>
+
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_nav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#E11586"
+        app:itemIconTint="@color/white"
+        app:itemTextColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/menu">
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+    <TextView
+        android:id="@+id/services_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="OUR SERVICES"
+        android:textColor="#000000"
+        android:textSize="18dp"
+        android:fontFamily="sans-serif"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewFlipper" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/services_text">
+
+        <ImageButton
+            android:id="@+id/imageButton3"
+            android:layout_width="54dp"
+            android:layout_height="46dp"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/custombutton"
+            android:backgroundTint="@color/toolbar"
+            android:scaleType="fitCenter"
+            app:layout_constraintBottom_toTopOf="@+id/beautician_text"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/services_text"
+            app:layout_constraintVertical_bias="1.0"
+            app:srcCompat="@drawable/makeupp" />
+
+        <ImageButton
+            android:id="@+id/imageButtonhair"
+            android:layout_width="54dp"
+            android:layout_height="46dp"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/custombutton"
+            android:backgroundTint="@color/toolbar"
+            android:scaleType="fitCenter"
+            app:layout_constraintBottom_toTopOf="@+id/beautician_text"
+            app:layout_constraintStart_toEndOf="@+id/imageButton3"
+            app:layout_constraintTop_toBottomOf="@+id/services_text"
+            app:layout_constraintVertical_bias="1.0"
+            app:srcCompat="@drawable/scissorandcomb" />
+
+        <ImageButton
+            android:id="@+id/imageButtonnail"
+            android:layout_width="54dp"
+            android:layout_height="46dp"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/custombutton"
+            android:backgroundTint="@color/toolbar"
+            android:scaleType="fitCenter"
+            app:layout_constraintBottom_toTopOf="@+id/beautician_text"
+            app:layout_constraintStart_toEndOf="@+id/imageButton4"
+            app:layout_constraintTop_toBottomOf="@+id/services_text"
+            app:layout_constraintVertical_bias="1.0"
+            app:srcCompat="@drawable/iconnail" />
+
+        <ImageButton
+            android:id="@+id/imageButtonfacial"
+            android:layout_width="54dp"
+            android:layout_height="46dp"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/custombutton"
+            android:backgroundTint="@color/toolbar"
+            android:scaleType="fitCenter"
+            app:layout_constraintBottom_toTopOf="@+id/beautician_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.511"
+            app:layout_constraintStart_toEndOf="@+id/imageButton5"
+            app:layout_constraintTop_toBottomOf="@+id/services_text"
+            app:layout_constraintVertical_bias="1.0"
+            app:srcCompat="@drawable/beautytreatment" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/beautician_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="4dp"
+        android:fontFamily="sans-serif"
+        android:text="OUR EXPERTS"
+        android:textColor="#000000"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="357dp"
+        android:layout_height="270dp"
+
+        android:layout_marginBottom="65dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/beautician_text"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="332dp"
+                android:layout_height="138dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="5dp"
+                android:backgroundTint="#FFEBF6"
+                app:cardCornerRadius="20dp">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="140dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Saima Rasheed"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/imageViewprofile"
+                    android:layout_width="126dp"
+                    android:layout_height="match_parent"
+                    android:adjustViewBounds="false"
+                    android:cropToPadding="true"
+
+                    app:srcCompat="@drawable/profile" />
+
+                <TextView
+                    android:id="@+id/textViewexp"
+                    android:layout_width="224dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="140dp"
+                    android:layout_marginTop="40dp"
+                    android:text="Bridal Makeup 2-yrs Experience"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="224dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="140dp"
+                    android:layout_marginTop="80dp"
+                    android:text="Charges-12000"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/viewbtnsaima"
+                    android:layout_width="145dp"
+                    android:layout_height="37dp"
+                    android:layout_marginLeft="140dp"
+                    android:layout_marginTop="100dp"
+                    android:backgroundTint="#E11586"
+                    android:onClick="showPopup2"
+                    android:text="View Details"
+                    android:textColor="@color/white"
+                    android:textSize="10dp"
+                    app:cornerRadius="20dp" />
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="332dp"
+                android:layout_height="138dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="5dp"
+                android:backgroundTint="#FFEBF6"
+                app:cardCornerRadius="20dp">
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="140dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Shazia Hassan"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="130dp"
+                    android:layout_height="match_parent"
+
+                    app:srcCompat="@drawable/profile" />
+
+                <TextView
+                    android:id="@+id/textViewexp2"
+                    android:layout_width="224dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="140dp"
+                    android:layout_marginTop="40dp"
+                    android:text="Makeup Expert 5-yrs Experience"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/textViewexp5"
+                    android:layout_width="224dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="140dp"
+                    android:layout_marginTop="80dp"
+                    android:text="Charges-5000"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/viewbtnshazia"
+                    android:layout_width="145dp"
+                    android:layout_height="37dp"
+                    android:layout_marginLeft="140dp"
+                    android:layout_marginTop="100dp"
+                    android:backgroundTint="#E11586"
+                    android:onClick="showPopup1"
+                    android:text="View Details"
+                    android:textColor="@color/white"
+                    android:textSize="10dp"
+                    app:cornerRadius="20dp" />
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="332dp"
+                android:layout_height="138dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="5dp"
+                android:backgroundTint="#FFEBF6"
+                app:cardCornerRadius="20dp">
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="140dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Nasira Parveen"
+                    android:textColor="@color/black"
+                    android:textSize="22dp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="130dp"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/profile" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="224dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="140dp"
+                    android:layout_marginTop="40dp"
+                    android:text="Makeup Expert 5-yrs Experience"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="224dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="140dp"
+                    android:layout_marginTop="80dp"
+                    android:text="Charges-5000"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/viewbtnnasira"
+                    android:layout_width="145dp"
+                    android:layout_height="37dp"
+                    android:layout_marginLeft="140dp"
+                    android:layout_marginTop="100dp"
+                    android:backgroundTint="#E11586"
+                    android:onClick="showPopup"
+                    android:text="View Details"
+                    android:textColor="@color/white"
+                    android:textSize="10dp"
+                    app:cornerRadius="20dp" />
+
+
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/seeall_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="See All"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.872"
+        app:layout_constraintStart_toEndOf="@+id/beautician_text"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

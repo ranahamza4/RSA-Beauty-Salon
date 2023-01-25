@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.rsabeautysalon">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.RSABeautySalon">
+        <activity
+            android:name="com.example.rsabeautysalon.AdminDashboard"
+            android:exported="false" />
+        <activity
+            android:name="com.example.rsabeautysalon.Choose"
+            android:exported="false" />
+        <activity
+            android:name="com.example.rsabeautysalon.DashBoard"
+            android:exported="false" />
+        <activity
+            android:name="com.example.rsabeautysalon.Contact"
+            android:exported="false" />
+        <activity
+            android:name="com.example.rsabeautysalon.Makeup"
+            android:exported="false" />
+        <activity
+            android:name="com.example.rsabeautysalon.Hair"
+            android:exported="false" />
+        <activity
+            android:name="com.example.rsabeautysalon.Nail"
+            android:exported="false" />
+        <activity
+            android:name="com.example.rsabeautysalon.Facial"
+            android:exported="false" />
+        <activity
+            android:name="com.example.rsabeautysalon.Services"
+            android:exported="false" />
+        <activity
+            android:name="com.example.rsabeautysalon.About"
+            android:exported="false" />
+        <activity
+            android:name="com.example.rsabeautysalon.Appointment"
+            android:exported="false" />
+        <activity
+            android:name="com.example.rsabeautysalon.LandingScreen"
+            android:exported="false" />
+        <activity
+            android:name="com.example.rsabeautysalon.Register"
+            android:exported="false" />
+        <activity
+            android:name="com.example.rsabeautysalon.ResetPassword"
+            android:exported="false" />
+        <activity
+            android:name="com.example.rsabeautysalon.login"
+            android:exported="false" />
+        <activity
+            android:name="com.example.rsabeautysalon.MainActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.rsabeautysalon.FirstScreen"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

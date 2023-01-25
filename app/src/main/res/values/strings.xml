@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">RSA Saloon</string>
+    <string-array name="number">
+        <item>Select Number</item>
+        <item>One</item>
+        <item>Two</item>
+        <item>Three</item>
+        <item>Four</item>
+        <item>Five</item>
+        <item>Six</item>
+    </string-array>
+    <string-array name="beautician">
+        <item>Select Beautician</item>
+        <item>Saima Rasheed</item>
+        <item>Shazia Hassan</item>
+        <item>Nasira Parveen</item>
+        <item>Rakash Rasheed</item>
+        <item>Areej Fatima</item>
+        <item>Rizwa Hassan</item>
+        <item>Sonia Khan</item>
+        <item>Amna Ahmed</item>
+        <item>Sania Azhar</item>
+        <item>Ayeza Ali</item>
+
+    </string-array>
+    <string-array name="service">
+        <item>Select Service</item>
+        <item>Party Makeup (7000)</item>
+        <item>Bridal Makeup (12000)</item>
+        <item>Simple Look (5000)</item>
+        <item>Massage (5000)</item>
+        <item>Hydra Facial (10000)</item>
+        <item>Hair Cut (1000)</item>
+        <item>Hair Dye (5000)</item>
+        <item>Hair Treatment (8000)</item>
+        <item>Nail Art (2000)</item>
+        <item>Arcylic Nails (5000)</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

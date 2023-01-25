@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="container" type="id" />
+    <item name="card_view_booking" type="id" />
+    <item name="card_view_cart" type="id" />
+    <item name="card_view_history" type="id" />
+    <item name="card_view_notification" type="id" />
+    <item name="layout_user_information" type="id" />
+    <item name="recyclerview" type="id" />
+    <item name="floatingActionButton" type="id" />
+</resources>
